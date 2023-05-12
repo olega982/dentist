@@ -459,8 +459,8 @@ div.product-type {
   background-image: url("../src/Arrow\ 1.svg");
   background-position: center;
   background-repeat: no-repeat;
-  width: 7.1rem;
-  height: 7.1rem;
+  width: 6.1rem;
+  height: 6.1rem;
   border: 1px solid var(--border-color);
   border-radius: 50%;
   box-shadow: 5px 5px 10px rgba(63, 62, 62, 0.5);
