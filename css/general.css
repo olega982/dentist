@@ -1,0 +1,108 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Bold: 600
+- Font Colors:
+Header: #515151
+Main color: #262626
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary: #FFD801
+- Tints:
+- Shades: 
+- Accents:
+- Greys:
+#F2F2F2
+#E5E5E5 
+#7C7C7C 
+#F8F8F8
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+Default: 5px
+Medium: 
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-weight: 300;
+  color: #262626;
+  text-decoration: none;
+}
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #262626;
+}
+
+.container {
+  width: 188rem;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+.grid {
+  display: grid;
+}
+.col--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.row--2 {
+  grid-template-rows: auto 1fr;
+}
+.category-header {
+  font-size: 4rem;
+  font-weight: 100;
+  position: relative;
+  margin-bottom: 7rem;
+}
+.category-header::after {
+  position: absolute;
+  content: "";
+  bottom: -1.5rem;
+  left: 0;
+  display: inline-block;
+  width: 13.8rem;
+  height: 0.5rem;
+  background-color: var(--main-color);
+}
